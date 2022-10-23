@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "RubikLight";
+  src: url("../fonts/Rubik/Rubik-Light.ttf");
+}
+* {
+  margin: 0;
+}
+
+.content {
+  padding: 4vh 3vw;
+  background-color: rgba(102, 107, 114, 0.2);
+}
+.content .content-head {
+  display: flex;
+  flex-direction: row;
+}
+.content .content-head .content-head-arrow {
+  margin-right: 8vw;
+}
+.content .content-head .content-head__name {
+  font-size: 2em;
+  color: #012f55;
+  border-bottom: 3px solid rgb(206, 147, 58);
+}
+.content .content-main {
+  margin-top: 4vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(102, 107, 114, 0.496);
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 1px 1px 6px #24445e;
+}
+.content .content-main .content-main__image1 {
+  border-radius: 10px;
+  box-shadow: 1px 1px 8px #24445e;
+  align-self: center;
+  height: 65vh;
+}
+.content .content-main .content-main__text {
+  font-size: 1.2em;
+  color: #012f55;
+  line-height: 1.4em;
+}/*# sourceMappingURL=services.css.map */

@@ -1,0 +1,59 @@
+@font-face {
+	font-family: 'RubikLight';
+	src: url('../fonts/Rubik/Rubik-Light.ttf') ;
+}
+*{
+    margin: 0;
+}
+.container-gallery{
+    background-color: #040404cd;
+    width: 100%;
+    padding: 2vh 5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    .gallery-text{
+        margin-bottom: 4vh;
+        .gallery-text-block{
+            display: flex;
+            flex-direction: row;
+            align-items:center;
+            .gallery-text-arrow{
+                margin-right: 5vw;
+                .gallery-text-arrow__link{
+                    width: auto;
+                    height: 8vh;
+                    .head-block-arrow{
+                        
+                    }
+                }
+            }
+            .gallery-text__head{
+                color: #ffffff;
+                font-size: 2.4em;
+                font-family: 'RubikLight';
+                line-height: 2em;
+            }
+        }
+        .gallery-text__main{
+            
+            color: #ffffff;
+            font-family: 'RubikLight';
+            font-size: 1em;
+            line-height: 1.5em;
+            letter-spacing: 0.4px;
+        }
+    }
+    .gallery img{
+        margin: 5px;
+        border: 3px solid #ffffff;
+    }
+    img{
+        width: 150px;
+        height: 110px;
+    }
+    a.photo:hover img{
+        border: 3px solid yellow;
+    }
+}

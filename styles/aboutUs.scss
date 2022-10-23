@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'RubikLight';
+	src: url('../fonts/Rubik/Rubik-Light.ttf') ;
+}
+*{
+    margin: 0;
+}
+body{
+    
+    background: linear-gradient(to right, rgb(177, 177, 176) 10%,rgb(227, 155, 46) );
+    // background-color: rgb(156, 173, 248); 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    box-sizing: border-box;
+    padding: 2vh 5vw;
+    position: relative;
+    
+    
+    .content{
+        
+        
+        .content-head{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 8vh;
+            .content-head-arrow{
+                margin-right: 5vw;
+                .gallery-text-arrow__link{
+                    width: auto;
+                    height: 8vh;
+                }
+            }
+            .content-head__name{
+                color: #ffffff;
+                font-size: 2.4em;
+                font-family: 'RubikLight';
+                line-height: 2em;
+                text-shadow: 0px 0px 2px rgb(196, 13, 0)
+            }
+        }
+        .content-main{
+            background-color: rgba(81, 81, 71, 0.34);
+            padding: 1em;
+            border-radius: 6px;
+            .content-main__image1{
+                width: 23vw;
+                height: auto;
+                border-radius: 6px;
+                float: left;
+                margin: 0 2vw 2vh 0;
+            }
+            .content-main__text{
+                color: #ffffff;
+                letter-spacing: 0.1em;
+                font-family: 'RubikLight';
+                text-indent: 1.5em;
+                margin-bottom: 20px;
+                font-size: 1.2em;
+                text-shadow: 0px 0px 2px rgb(196, 13, 0)
+            }
+        }
+    }
+}
+.logo{
+    display: flex;
+    margin: 8vh 0;
+    width: 18vw;
+    .logo__icon{
+    
+    }
+}
+
+
+
