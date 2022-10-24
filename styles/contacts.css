@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: rgba(118, 87, 56, 0.7882352941);
+  background-color: rgba(102, 107, 114, 0.2);
   position: relative;
   max-height: 700px;
 }
@@ -16,6 +16,11 @@ body {
   height: 100%;
   padding: 2vh 10vw;
 }
+@media (max-width: 780px) {
+  .main {
+    padding: 2vh 7vw;
+  }
+}
 .main .head-block {
   display: flex;
   flex-direction: row;
@@ -26,22 +31,58 @@ body {
 }
 .main .head-block .head-block-arrow .head-block-arrow__link {
   width: auto;
-  height: 12vh;
+  height: 10vh;
+}
+@media (max-width: 1280px) {
+  .main .head-block .head-block-arrow .head-block-arrow__link {
+    height: 8vh;
+  }
+}
+@media (max-width: 780px) {
+  .main .head-block .head-block-arrow .head-block-arrow__link {
+    height: 7vh;
+  }
+}
+@media (max-width: 620px) {
+  .main .head-block .head-block-arrow .head-block-arrow__link {
+    height: 6vh;
+  }
 }
 .main .head-block .gallery-text__head {
   color: #012f55;
   letter-spacing: 0.4px;
   font-size: 2.5em;
-  border-bottom: 3px solid rgba(246, 165, 25, 0.7803921569);
+  border-bottom: 3px solid rgb(206, 147, 58);
+}
+@media (min-width: 1280px) {
+  .main .head-block .gallery-text__head {
+    font-size: 2.8em;
+  }
+}
+@media (max-width: 780px) {
+  .main .head-block .gallery-text__head {
+    font-size: 2.3em;
+  }
+}
+@media (max-width: 620px) {
+  .main .head-block .gallery-text__head {
+    font-size: 2.1em;
+  }
 }
 .main .main-block {
   margin-top: 10vh;
-  background-color: rgba(246, 165, 25, 0.7803921569);
+  background-color: rgba(102, 107, 114, 0.2);
   height: 50vh;
   position: relative;
   width: auto;
   padding: 2vh 2vw;
   border-radius: 6px;
+  box-shadow: 1px 1px 6px #24445e;
+}
+@media (max-width: 620px) {
+  .main .main-block {
+    min-height: 310px;
+  }
 }
 .main .main-block .contacs {
   font-size: 1.7em;
@@ -51,15 +92,61 @@ body {
   font-weight: 500;
   letter-spacing: 0.05em;
 }
+@media (max-width: 780px) {
+  .main .main-block .contacs {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 780px) {
+  .main .main-block .contacs {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 620px) {
+  .main .main-block .contacs {
+    font-size: 1.2em;
+  }
+}
 .main .main-block .mail {
   font-size: 1.7em;
   color: #012f55;
   font-weight: 500;
   letter-spacing: 0.05em;
 }
+@media (max-width: 780px) {
+  .main .main-block .mail {
+    font-size: 1.5em;
+  }
+}
+@media (max-width: 620px) {
+  .main .main-block .mail {
+    font-size: 1.4em;
+  }
+}
+@media (max-width: 620px) {
+  .main .main-block .mail {
+    font-size: 1.2em;
+  }
+}
 .main .main-block .call-image {
   position: absolute;
   right: 6vw;
   top: 16vh;
   width: 18vw;
+}
+@media (max-width: 1600px) {
+  .main .main-block .call-image {
+    width: 15vw;
+  }
+}
+@media (max-width: 1280px) {
+  .main .main-block .call-image {
+    width: 14vw;
+  }
+}
+@media (max-width: 780px) {
+  .main .main-block .call-image {
+    left: 2vw;
+    top: 230px;
+  }
 }/*# sourceMappingURL=contacts.css.map */

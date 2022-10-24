@@ -30,17 +30,27 @@
             display: flex;
             background-size: cover;
             width: 100%;
-            height: 500px;
+            height: 750px;
             background-image: url(images/vitodens.gif);
             background-size: 500px auto;
             background-repeat: no-repeat;
+            @media(max-width:1600px){
+                height: 650px;
+            }
+            @media(max-width:1400px){
+                height: 550px;
+            }
+            @media(max-width:900px){
+                top: 30px;
+                background-size: 440px auto;
+            }
 
         // стили формы
         .form {
             display: none;
             flex-direction: row;
             justify-content: center;
-            background-color: #5f94c8;
+            background-color: #445396f1;
             width: 40vw;
             margin: 0px auto;
             color: #ffffff;
@@ -50,12 +60,13 @@
             right: 30%;
             top: 5vh;
             position: absolute;
+            border-radius: 10px;
+            box-shadow: 0px 0px 8px #ffffff;
+            
         }
         .form *{
             outline: none;
         }
-        // .form__body {
-        // }
         .form-title-item{
             display: flex;
             flex-direction: row;
@@ -102,30 +113,11 @@
             min-height: 128px;
             resize: vertical;
             padding: 20px;
+            
         }
         .options {
             padding: 10px 0px 0px 0px;
         }
-        // .options__item {
-            
-        // }
-        // .options__input {
-            
-        // }
-        // .options__input:checked+.options__label::after {
-            
-        // }
-        // .options__label {
-            
-        // }
-        // .options__label::before{
-            
-        // }
-        // .options__label::after{
-            
-        // }
-        // .file {
-        // }
         .file__item {
             position: relative;
         }
@@ -145,8 +137,10 @@
             border-radius: 30px;
             justify-content:center ;
             align-items: center;
-            background-color: #2f46ac;
+            background-color: #19319b;
             padding: 0px 20px;
+            box-shadow: 1px 1px 6px #aad4f7;
+            letter-spacing: 0.1em;
         }
         .file__preview {
             display: inline-block;
@@ -176,7 +170,6 @@
             top: 3px;
             box-shadow: 0 2px 0 #1d4505;
         }
-
             .item-grop{
                 position: relative;
                 width: 100%;
@@ -188,13 +181,25 @@
                     justify-content: flex-start;
                     align-items: center;
                     width: auto;
-                    height: 50px;
+                    height: 100px;
                     background-color: rgb(156, 173, 248); 
                     padding: 0% 2em;
+                    @media(max-width:1550px){
+                        height: 80px;
+                    }
+                    @media(max-width:1400px){
+                        height: 65px;
+                    }
+                    @media(max-width:1280px){
+                        height: 50px;
+                    }
+
                     .panel-logo{
                         display: flex;
                         height: 100%;
+                        
                     }
+                    
                     .panel-control{
                         margin-left: 6em;
                         display: flex;
@@ -202,6 +207,9 @@
                         justify-content: space-between;
                         width: 50%;
                         z-index: 1;
+                        @media(max-width:980px){
+                            margin-left: 4em;
+                        }
                         .panel-control__link{
                             text-decoration: none;
                             color: #2f46ac;
@@ -212,6 +220,15 @@
                             &:hover{
                                 color: #5773ed;
                                 text-shadow: 2px 2px 2px rgb(255, 171, 2) ;
+                            }
+                            @media(min-width:1400px){
+                                font-size: 1.5em;
+                            }
+                            @media(max-width:980px){
+                                font-size: 1.1em;
+                            }
+                            @media(max-width:800px){
+                                font-size: 1em;
                             }
                         }
                     }
@@ -245,7 +262,8 @@
                         width: 15vw;
                         height: 78%;
                         font-family: RubikMedium;
-                        font-size: 1 em;
+                        text-shadow: 0px 0px 3px #ffffff;
+                        font-size: 1em;
                         border-radius: 5px;
                         border: none;
                         background: radial-gradient(64% 55%, #70a1dc,#445396e8);
@@ -263,6 +281,12 @@
                                 transform: translateX(0px);
                             }
                         }
+                        @media(min-width:1400px){
+                            font-size: 1.3em;
+                        }
+                        @media(max-width:1100px){
+                            font-size: 0.8em;
+                        }
                     }
                 }
                 .item-group-bg{
@@ -270,6 +294,9 @@
                         .item-group-bg-mark1__image{
                             position: absolute;
                             top: 0%;
+                            @media(max-width:900px){
+                                max-height: 450px;
+                            }
                         }
                     }
                     .item-group-bg-mark2{
@@ -277,6 +304,13 @@
                             position: absolute;
                             right: 0%;
                             top: 50%;
+                            @media(max-width:1280px){
+                                max-height: 350px;
+                                top: 55%;
+                            }
+                            @media(max-width:900px){
+                                max-height: 280px;
+                            }
                         }
                     }
                 }
@@ -289,6 +323,12 @@
                     color: white; 
                     font-size: 2.1em; 
                     letter-spacing: 1.3px;
+                    @media(max-width:1280px){
+                        font-size: 1.9em;
+                    }
+                    @media(max-width:900px){
+                        font-size: 1.7em;
+                    }
                 }
             }
         }
@@ -298,9 +338,6 @@
             width: 100%;
             height: auto;
             position: relative;
-            // @media(max-width:500px){
-            //     height: auto;
-            // }
             .types{
                 display: flex;
                 height: auto;
@@ -330,6 +367,9 @@
                         border-radius: 15px;
                         padding: 10px;
                         margin-top: 20px;
+                        @media(min-width:1400px){
+                            font-size: 1.2em;
+                        }
                         
                         .types-left-column-text__main{
                             font-size: 1.6em;
@@ -337,6 +377,9 @@
                             font-family: 'RubikMedium';
                             text-shadow: 3px 3px 2px #fbfcfc ;
                             color:#0a1858;
+                            @media(min-width:1400px){
+                                font-size: 1.8em;
+                            }
                         }
                         .text-group{
                             .text-group__item{
@@ -364,6 +407,10 @@
                         border-radius: 15px;
                         padding: 10px;
                         margin-bottom: 20px;
+                        
+                        @media(min-width:1400px){
+                            font-size: 1.2em;
+                        }
 
                         .types-right-column-text__main{
                             color: #0a1858;
@@ -371,6 +418,10 @@
                             line-height: 2.0em;
                             font-family: 'RubikMedium';
                             text-shadow: 3px 3px 2px #fbfcfc ;
+                            @media(min-width:1400px){
+                                font-size: 1.8em;
+                                line-height: 1.4em;
+                            }
                         }
                         .text-group{
                             .text-group__item{
